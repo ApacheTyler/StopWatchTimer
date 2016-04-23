@@ -12,23 +12,23 @@ public class TimerCount {
     
     private var count : Int;
     
-    init () {
+    public init () {
         self.count = 0;
     }
     
-    func updateCount () -> Void {
+    public func updateCount () -> Void {
         self.count += 1
     }
     
-    func resetCount () -> Void {
+    public func resetCount () -> Void {
         self.count = 0
     }
     
-    func getCount () -> Int {
+    public func getCount () -> Int {
         return self.count
     }
     
-    func setCount (numberToSetCountTo : Int) -> Void {
+    public func setCount (numberToSetCountTo : Int) -> Void {
         self.count = numberToSetCountTo
     }
     

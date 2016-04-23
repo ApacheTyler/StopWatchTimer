@@ -12,19 +12,19 @@ public class Timer {
     
     private var timer = NSTimer()
     
-    class func getInstance() -> Timer{
+    public class func getInstance() -> Timer{
         return Timer()
     }
         
-    func startTimer (timerTarget: AnyObject, timerSelector: Selector) -> Void {
+    public func startTimer (timerTarget: AnyObject, timerSelector: Selector) -> Void {
          self.timer =  NSTimer.scheduledTimerWithTimeInterval(1, target: timerTarget, selector: timerSelector, userInfo: nil, repeats: true)
     }
     
-    func stopTimer () -> Void {
+    public func stopTimer () -> Void {
         self.timer.invalidate()
     }
     
-    func resetTimer () -> Void {
+    public func resetTimer () -> Void {
         self.timer.invalidate()
         self.timer = NSTimer()
     }
