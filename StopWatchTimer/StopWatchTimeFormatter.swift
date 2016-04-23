@@ -1,0 +1,29 @@
+//
+//  StopWatchTimeFormatter.swift
+//  StopWatchTimer
+//
+//  Created by Tyler Freeman on 4/14/16.
+//  Copyright (c) 2016 Tyler Freeman. All rights reserved.
+//
+
+import Foundation
+
+public class StopWatchTimeFormatter {
+    
+    init () {
+        
+    }
+    
+    func formatHMS (count: Int) -> String {
+        return ""
+    }
+    
+    func formatMST (time: Int) -> String {
+        return ""
+    }
+    
+    func formatST (time: Int) -> String {
+        return ""
+    }
+    
+}

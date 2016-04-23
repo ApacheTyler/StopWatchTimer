@@ -9,14 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var timer = Timer.getInstance()
+    var timerCount = TimerCount()
+    
     @IBOutlet weak var TimeLabel: UILabel!
     @IBOutlet weak var FormatSegment: UISegmentedControl!
-//    @IBOutlet weak var StartStopSegment: UISegmentedControl!
     @IBOutlet weak var StartStopSegment: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.StartStopSegment.selectedSegmentIndex = 1
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -26,49 +29,20 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startStopSegmentIndexChanged(sender: AnyObject) {
-        switch StartStopSegment.selectedSegmentIndex
-                {
-                case 0:
-                    println("timer started")
-                    break;
-                case 1:
-                    println("timer stopped")
-                    break;
-                default:
-                    println("timer stopped")
-                    break;
-                }
-
+        self.updateTimerStatusBasedOnStartStopSegmentSelectedIndex()
     }
-    
-    
-    
-//    @IBAction func StartStopSegmentIndexChanged(sender: UISegmentedControl) {
-//        switch StartStopSegment.selectedSegmentIndex
-//        {
-//        case 0:
-//            print("timer started")
-//            break;
-//        case 1:
-//            print("timer stopped")
-//            break;
-//        default:
-//            print("timer stopped")
-//            break;
-//        }
-//    }
     
     @IBAction func FormatSegmentIndexChanged(sender: UISegmentedControl) {
         switch FormatSegment.selectedSegmentIndex
         {
         case 0:
-            println("h.m.s")
+            self.formatHMS(0)
         case 1:
-            println("m.s.t")
+            self.formatMST(0)
         case 2:
-            println("s.t")
+            self.formatST(0)
         default:
-            println("h.m.s")
+            self.formatHMS(0)
         }
     }
     
@@ -84,12 +58,27 @@ class ViewController: UIViewController {
         println("Saving time")
     }
     
+    func updateTimerStatusBasedOnStartStopSegmentSelectedIndex() -> Void {
+        switch StartStopSegment.selectedSegmentIndex
+        {
+        case 0:
+            self.startTimer()
+            break;
+        case 1:
+            self.stopTimer()
+            break;
+        default:
+            self.stopTimer()
+            break;
+        }
+    }
+    
     func startTimer() -> Void {
-        println("Timer Started")
+        self.timer.startTimer(self, timerSelector: Selector("updateLabelWithTimerCount"))
     }
     
     func stopTimer() -> Void {
-        println("Timer Stopped")
+        self.timer.stopTimer()
     }
     
     func formatHMS(time: Int) -> Void {
@@ -105,7 +94,18 @@ class ViewController: UIViewController {
     }
     
     func resetTimer() -> Void {
-        println("Reseting timer")
+        self.timer.resetTimer()
+        self.timerCount.resetCount()
+        let currentCount = self.timerCount.getCount()
+        self.updateLabelWithString(String(currentCount))
+        self.updateTimerStatusBasedOnStartStopSegmentSelectedIndex()
+    }
+    
+    func updateLabelWithTimerCount() -> Void {
+        self.timerCount.updateCount()
+        let currentTimerCount = self.timerCount.getCount()
+        let stringOfTimerCount = String(currentTimerCount)
+        self.updateLabelWithString(stringOfTimerCount)
     }
     
     func updateLabelWithString (updateString: String) -> Void {
