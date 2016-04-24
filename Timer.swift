@@ -10,7 +10,7 @@ import Foundation
 
 public class Timer {
     
-    private var timer = NSTimer()
+    internal var timer = NSTimer()
     
     public class func getInstance() -> Timer{
         return Timer()

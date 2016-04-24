@@ -8,9 +8,9 @@
 
 import Foundation
 
-public class TimerCount {
+public class Counter {
     
-    private var count : Int;
+    internal var count : Int;
     
     public init () {
         self.count = 0;

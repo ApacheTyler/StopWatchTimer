@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var timer = Timer.getInstance()
-    var timerCount = TimerCount()
+    var timerCount = Counter()
     
     @IBOutlet weak var TimeLabel: UILabel!
     @IBOutlet weak var FormatSegment: UISegmentedControl!
@@ -51,11 +51,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func viewSavedButtonPressed(sender: AnyObject) {
-        println("Viewing Saved")
+        print("Viewing Saved")
     }
     
     @IBAction func saveTimeButtonPressed(sender: AnyObject) {
-        println("Saving time")
+        print("Saving time")
     }
     
     func updateTimerStatusBasedOnStartStopSegmentSelectedIndex() -> Void {
@@ -82,15 +82,15 @@ class ViewController: UIViewController {
     }
     
     func formatHMS(time: Int) -> Void {
-        println("Formatting time as HMS")
+        print("Formatting time as HMS")
     }
     
     func formatMST(time: Int) -> Void {
-        println("Formatting time as MST")
+        print("Formatting time as MST")
     }
     
     func formatST(time: Int) -> Void {
-        println("Formatting time as ST")
+        print("Formatting time as ST")
     }
     
     func resetTimer() -> Void {

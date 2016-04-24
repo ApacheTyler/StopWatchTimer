@@ -8,12 +8,15 @@
 
 import UIKit
 import XCTest
-import StopWatchTimer
+@testable import StopWatchTimer
 
 class TimerCountTests: XCTestCase {
     
+    var timerCounterInstance : Counter = Counter()
+    
     override func setUp() {
         super.setUp()
+        self.timerCounterInstance = Counter()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
@@ -22,24 +25,22 @@ class TimerCountTests: XCTestCase {
         super.tearDown()
     }
 
+
     func testDefaultInit() {
-        // This is an example of a functional test case.
-        var count = TimerCount()
-        var defaultCountValue = count.getCount()
+        let defaultCountValue = self.timerCounterInstance.getCount()
         XCTAssertEqual(defaultCountValue, 0, "Timer count is 0 by default")
     }
     
     func testUpdateCount() {
-        var count = TimerCount()
-        count.updateCount()
-        var updatedCountValue = count.getCount()
+        self.timerCounterInstance.updateCount()
+
+        let updatedCountValue = self.timerCounterInstance.getCount()
         XCTAssertEqual(updatedCountValue, 1, "Updated count value should be 1")
     }
     
     func testSetCount() {
-        var count = TimerCount()
-        count.setCount(33)
-        var countValue = count.getCount()
+        self.timerCounterInstance.setCount(33)
+        let countValue = self.timerCounterInstance.getCount()
         XCTAssertEqual(33, countValue, "Count value should be 33")
     }
     
