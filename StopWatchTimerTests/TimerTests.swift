@@ -12,23 +12,17 @@ import XCTest
 
 class TimerTests: XCTestCase {
     
-    var timerInstance : Timer = Timer.getInstance();
+    var timerInstance : Timer = Timer()
     
     override func setUp() {
         super.setUp()
-        self.timerInstance = Timer.getInstance()
+        self.timerInstance = Timer()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
         super.tearDown()
         self.timerInstance.resetTimer()
-    }
-    
-    func testGetInstance() {
-        // This is an example of a functional test case.
-        let timer = Timer.getInstance()
-        XCTAssertNotNil(timer, "Timer is not nil")
     }
     
     func testTimerIsRunning () {
@@ -49,6 +43,17 @@ class TimerTests: XCTestCase {
         self.timerInstance.resetTimer()
         let isTimerValid = self.timerInstance.timer.valid
         XCTAssertFalse(isTimerValid)
+    }
+    
+    func testTimerIsNotActiveByDefault () {
+        let timerActive = self.timerInstance.isActive()
+        XCTAssertFalse(timerActive)
+    }
+    
+    func testTimerIsActiveOnceStarted () {
+        self.timerInstance.startTimer(self, timerSelector: nil)
+        let timerActive = self.timerInstance.isActive()
+        XCTAssertTrue(timerActive)
     }
     
     

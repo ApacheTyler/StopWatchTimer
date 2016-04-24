@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		BC0CA12A1CCBB1F300C89EB9 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CA1291CCBB1F300C89EB9 /* Counter.swift */; };
-		BC0CA12C1CCBB6C000C89EB9 /* TimerCountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CA12B1CCBB6C000C89EB9 /* TimerCountTests.swift */; };
+		BC0CA12C1CCBB6C000C89EB9 /* CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CA12B1CCBB6C000C89EB9 /* CounterTests.swift */; };
 		BC76F9FF1CCC43CA00701C15 /* TimerCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76F9FE1CCC43CA00701C15 /* TimerCounter.swift */; settings = {ASSET_TAGS = (); }; };
 		BC76FA001CCC43CA00701C15 /* TimerCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76F9FE1CCC43CA00701C15 /* TimerCounter.swift */; settings = {ASSET_TAGS = (); }; };
+		BC76FA021CCC488800701C15 /* TimerCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76FA011CCC488800701C15 /* TimerCounterTests.swift */; settings = {ASSET_TAGS = (); }; };
+		BC76FA031CCC4C6200701C15 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9390531CC01DA2000A951E /* Timer.swift */; settings = {ASSET_TAGS = (); }; };
+		BC76FA041CCC4C8800701C15 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CA1291CCBB1F300C89EB9 /* Counter.swift */; settings = {ASSET_TAGS = (); }; };
+		BC76FA071CCD0DFD00701C15 /* TestSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76FA061CCD0DFD00701C15 /* TestSpy.swift */; settings = {ASSET_TAGS = (); }; };
+		BC76FA081CCD0DFD00701C15 /* TestSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76FA061CCD0DFD00701C15 /* TestSpy.swift */; settings = {ASSET_TAGS = (); }; };
 		BC9390321CBFCDDE000A951E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9390311CBFCDDE000A951E /* AppDelegate.swift */; };
 		BC9390341CBFCDDE000A951E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9390331CBFCDDE000A951E /* ViewController.swift */; };
 		BC9390371CBFCDDE000A951E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9390351CBFCDDE000A951E /* Main.storyboard */; };
@@ -33,8 +38,10 @@
 
 /* Begin PBXFileReference section */
 		BC0CA1291CCBB1F300C89EB9 /* Counter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
-		BC0CA12B1CCBB6C000C89EB9 /* TimerCountTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCountTests.swift; sourceTree = "<group>"; };
+		BC0CA12B1CCBB6C000C89EB9 /* CounterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterTests.swift; sourceTree = "<group>"; };
 		BC76F9FE1CCC43CA00701C15 /* TimerCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCounter.swift; sourceTree = "<group>"; };
+		BC76FA011CCC488800701C15 /* TimerCounterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCounterTests.swift; sourceTree = "<group>"; };
+		BC76FA061CCD0DFD00701C15 /* TestSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSpy.swift; sourceTree = "<group>"; };
 		BC93902C1CBFCDDE000A951E /* StopWatchTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopWatchTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9390301CBFCDDE000A951E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC9390311CBFCDDE000A951E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +121,9 @@
 			isa = PBXGroup;
 			children = (
 				BC9390471CBFCDDE000A951E /* TimerTests.swift */,
-				BC0CA12B1CCBB6C000C89EB9 /* TimerCountTests.swift */,
+				BC0CA12B1CCBB6C000C89EB9 /* CounterTests.swift */,
+				BC76FA011CCC488800701C15 /* TimerCounterTests.swift */,
+				BC76FA061CCD0DFD00701C15 /* TestSpy.swift */,
 				BC9390451CBFCDDE000A951E /* Supporting Files */,
 			);
 			path = StopWatchTimerTests;
@@ -236,6 +245,7 @@
 				BC0CA12A1CCBB1F300C89EB9 /* Counter.swift in Sources */,
 				BC76F9FF1CCC43CA00701C15 /* TimerCounter.swift in Sources */,
 				BC9390561CC02E96000A951E /* StopWatchTimeFormatter.swift in Sources */,
+				BC76FA071CCD0DFD00701C15 /* TestSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +255,11 @@
 			files = (
 				BC9390481CBFCDDE000A951E /* TimerTests.swift in Sources */,
 				BC76FA001CCC43CA00701C15 /* TimerCounter.swift in Sources */,
-				BC0CA12C1CCBB6C000C89EB9 /* TimerCountTests.swift in Sources */,
+				BC76FA041CCC4C8800701C15 /* Counter.swift in Sources */,
+				BC76FA021CCC488800701C15 /* TimerCounterTests.swift in Sources */,
+				BC76FA031CCC4C6200701C15 /* Timer.swift in Sources */,
+				BC0CA12C1CCBB6C000C89EB9 /* CounterTests.swift in Sources */,
+				BC76FA081CCD0DFD00701C15 /* TestSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

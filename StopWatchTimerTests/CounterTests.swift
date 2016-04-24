@@ -28,20 +28,20 @@ class TimerCountTests: XCTestCase {
 
     func testDefaultInit() {
         let defaultCountValue = self.timerCounterInstance.getCount()
-        XCTAssertEqual(defaultCountValue, 0, "Timer count is 0 by default")
+        XCTAssertEqual(defaultCountValue, 0, "Timer count should be 0 by default, but is \(defaultCountValue)")
     }
     
     func testUpdateCount() {
         self.timerCounterInstance.updateCount()
 
         let updatedCountValue = self.timerCounterInstance.getCount()
-        XCTAssertEqual(updatedCountValue, 1, "Updated count value should be 1")
+        XCTAssertEqual(updatedCountValue, 1, "Updated count value should be 1, but is \(updatedCountValue)")
     }
     
     func testSetCount() {
         self.timerCounterInstance.setCount(33)
         let countValue = self.timerCounterInstance.getCount()
-        XCTAssertEqual(33, countValue, "Count value should be 33")
+        XCTAssertEqual(33, countValue, "Count value should be 33, but is \(countValue)")
     }
     
 }

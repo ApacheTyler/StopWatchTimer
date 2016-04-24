@@ -10,8 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var timer = Timer.getInstance()
-    var timerCount = Counter()
+    var timerCounter = TimerCounter()
     
     @IBOutlet weak var TimeLabel: UILabel!
     @IBOutlet weak var FormatSegment: UISegmentedControl!
@@ -20,12 +19,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.StartStopSegment.selectedSegmentIndex = 1
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func startStopSegmentIndexChanged(sender: AnyObject) {
@@ -74,11 +71,20 @@ class ViewController: UIViewController {
     }
     
     func startTimer() -> Void {
-        self.timer.startTimer(self, timerSelector: Selector("updateLabelWithTimerCount"))
+        self.timerCounter.start(self.updateLabelWithTimerCount)
+    }
+    
+    func updateLabelWithTimerCount (countToSetLabelTo : Int) -> Void {
+        let stringOfTimerCount = String(countToSetLabelTo)
+        self.updateLabelWithString(stringOfTimerCount)
+    }
+    
+    func updateLabelWithString (updateString: String) -> Void {
+        self.TimeLabel.text = updateString
     }
     
     func stopTimer() -> Void {
-        self.timer.stopTimer()
+        self.timerCounter.stop()
     }
     
     func formatHMS(time: Int) -> Void {
@@ -94,22 +100,10 @@ class ViewController: UIViewController {
     }
     
     func resetTimer() -> Void {
-        self.timer.resetTimer()
-        self.timerCount.resetCount()
-        let currentCount = self.timerCount.getCount()
+        self.timerCounter.reset()
+        let currentCount = self.timerCounter.getCurrentCount()
         self.updateLabelWithString(String(currentCount))
         self.updateTimerStatusBasedOnStartStopSegmentSelectedIndex()
-    }
-    
-    func updateLabelWithTimerCount() -> Void {
-        self.timerCount.updateCount()
-        let currentTimerCount = self.timerCount.getCount()
-        let stringOfTimerCount = String(currentTimerCount)
-        self.updateLabelWithString(stringOfTimerCount)
-    }
-    
-    func updateLabelWithString (updateString: String) -> Void {
-        self.TimeLabel.text = updateString
     }
     
     func printFormattedTime(formatString : String, time : Int) -> String {
