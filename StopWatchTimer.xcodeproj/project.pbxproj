@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		BC0CA12A1CCBB1F300C89EB9 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CA1291CCBB1F300C89EB9 /* Counter.swift */; };
 		BC0CA12C1CCBB6C000C89EB9 /* CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CA12B1CCBB6C000C89EB9 /* CounterTests.swift */; };
+		BC2E22FE1CD121A7007DA3AF /* CountSecondFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2E22FD1CD121A7007DA3AF /* CountSecondFormatterTests.swift */; settings = {ASSET_TAGS = (); }; };
+		BC53D4051CD505F000F9C1C3 /* CountMinuteFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC53D4041CD505F000F9C1C3 /* CountMinuteFormatterTests.swift */; settings = {ASSET_TAGS = (); }; };
+		BC53D4071CD516D800F9C1C3 /* BaseCountFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC53D4061CD516D800F9C1C3 /* BaseCountFormatter.swift */; settings = {ASSET_TAGS = (); }; };
+		BC53D4081CD5173700F9C1C3 /* BaseCountFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC53D4061CD516D800F9C1C3 /* BaseCountFormatter.swift */; settings = {ASSET_TAGS = (); }; };
+		BC53D40C1CD51AB300F9C1C3 /* CountHourFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC53D40B1CD51AB300F9C1C3 /* CountHourFormatterTests.swift */; settings = {ASSET_TAGS = (); }; };
 		BC76F9FF1CCC43CA00701C15 /* TimerCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76F9FE1CCC43CA00701C15 /* TimerCounter.swift */; settings = {ASSET_TAGS = (); }; };
 		BC76FA001CCC43CA00701C15 /* TimerCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76F9FE1CCC43CA00701C15 /* TimerCounter.swift */; settings = {ASSET_TAGS = (); }; };
 		BC76FA021CCC488800701C15 /* TimerCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76FA011CCC488800701C15 /* TimerCounterTests.swift */; settings = {ASSET_TAGS = (); }; };
@@ -16,6 +21,33 @@
 		BC76FA041CCC4C8800701C15 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CA1291CCBB1F300C89EB9 /* Counter.swift */; settings = {ASSET_TAGS = (); }; };
 		BC76FA071CCD0DFD00701C15 /* TestSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76FA061CCD0DFD00701C15 /* TestSpy.swift */; settings = {ASSET_TAGS = (); }; };
 		BC76FA081CCD0DFD00701C15 /* TestSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76FA061CCD0DFD00701C15 /* TestSpy.swift */; settings = {ASSET_TAGS = (); }; };
+		BC76FA0D1CCD39E800701C15 /* TimerInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76FA0C1CCD39E800701C15 /* TimerInterval.swift */; settings = {ASSET_TAGS = (); }; };
+		BC76FA0E1CCD39E800701C15 /* TimerInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76FA0C1CCD39E800701C15 /* TimerInterval.swift */; settings = {ASSET_TAGS = (); }; };
+		BC76FA101CCD3E6700701C15 /* CountHundreathFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76FA0F1CCD3E6700701C15 /* CountHundreathFormatterTests.swift */; settings = {ASSET_TAGS = (); }; };
+		BC76FA121CCD48AA00701C15 /* CountHundreathFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76FA111CCD48AA00701C15 /* CountHundreathFormatter.swift */; settings = {ASSET_TAGS = (); }; };
+		BC76FA131CCD48AA00701C15 /* CountHundreathFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76FA111CCD48AA00701C15 /* CountHundreathFormatter.swift */; settings = {ASSET_TAGS = (); }; };
+		BC76FA141CCD49FD00701C15 /* CountFormattingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9390551CC02E96000A951E /* CountFormattingProtocol.swift */; settings = {ASSET_TAGS = (); }; };
+		BC76FA161CCD4A1700701C15 /* CountSecondFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76FA151CCD4A1700701C15 /* CountSecondFormatter.swift */; settings = {ASSET_TAGS = (); }; };
+		BC76FA171CCD4A1700701C15 /* CountSecondFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76FA151CCD4A1700701C15 /* CountSecondFormatter.swift */; settings = {ASSET_TAGS = (); }; };
+		BC76FA191CCD4A7000701C15 /* CountMinuteFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76FA181CCD4A7000701C15 /* CountMinuteFormatter.swift */; settings = {ASSET_TAGS = (); }; };
+		BC76FA1A1CCD4A7000701C15 /* CountMinuteFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76FA181CCD4A7000701C15 /* CountMinuteFormatter.swift */; settings = {ASSET_TAGS = (); }; };
+		BC76FA1C1CCD4A9800701C15 /* CountHourFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76FA1B1CCD4A9800701C15 /* CountHourFormatter.swift */; settings = {ASSET_TAGS = (); }; };
+		BC76FA1D1CCD4A9800701C15 /* CountHourFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76FA1B1CCD4A9800701C15 /* CountHourFormatter.swift */; settings = {ASSET_TAGS = (); }; };
+		BC8186311CDD4C9B00763382 /* BaseCountFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8186301CDD4C9B00763382 /* BaseCountFormatterTests.swift */; settings = {ASSET_TAGS = (); }; };
+		BC8186351CDE4AA100763382 /* TimeFormattingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8186341CDE4AA100763382 /* TimeFormattingProtocol.swift */; settings = {ASSET_TAGS = (); }; };
+		BC8186371CDE4B1E00763382 /* TimeSecondHundreathFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8186361CDE4B1E00763382 /* TimeSecondHundreathFormatter.swift */; settings = {ASSET_TAGS = (); }; };
+		BC8186391CDE4CC700763382 /* TimeMinuteSecondHundreathFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8186381CDE4CC700763382 /* TimeMinuteSecondHundreathFormatter.swift */; settings = {ASSET_TAGS = (); }; };
+		BC81863D1CDE4EE700763382 /* TimeHoureMinuteSecondFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81863C1CDE4EE700763382 /* TimeHoureMinuteSecondFormatter.swift */; settings = {ASSET_TAGS = (); }; };
+		BC8186411CDE502600763382 /* BaseTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8186401CDE502600763382 /* BaseTimeFormatter.swift */; settings = {ASSET_TAGS = (); }; };
+		BC8186451CDE544500763382 /* BaseTimeFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8186441CDE544500763382 /* BaseTimeFormatterTests.swift */; settings = {ASSET_TAGS = (); }; };
+		BC8186461CDE547000763382 /* BaseTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8186401CDE502600763382 /* BaseTimeFormatter.swift */; settings = {ASSET_TAGS = (); }; };
+		BC8186471CDE55E900763382 /* TimeSecondHundreathFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8186361CDE4B1E00763382 /* TimeSecondHundreathFormatter.swift */; settings = {ASSET_TAGS = (); }; };
+		BC8186481CDE55EC00763382 /* TimeMinuteSecondHundreathFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8186381CDE4CC700763382 /* TimeMinuteSecondHundreathFormatter.swift */; settings = {ASSET_TAGS = (); }; };
+		BC8186491CDE55EF00763382 /* TimeHoureMinuteSecondFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81863C1CDE4EE700763382 /* TimeHoureMinuteSecondFormatter.swift */; settings = {ASSET_TAGS = (); }; };
+		BC81864B1CDE560B00763382 /* TimeHourMinuteSecondFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81864A1CDE560B00763382 /* TimeHourMinuteSecondFormatterTests.swift */; settings = {ASSET_TAGS = (); }; };
+		BC81864C1CDE562F00763382 /* TimeFormattingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8186341CDE4AA100763382 /* TimeFormattingProtocol.swift */; settings = {ASSET_TAGS = (); }; };
+		BC81864E1CDE567900763382 /* TimeMinuteSecondHundreathFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81864D1CDE567900763382 /* TimeMinuteSecondHundreathFormatterTests.swift */; settings = {ASSET_TAGS = (); }; };
+		BC8186501CDE56A100763382 /* TimeSecondHundreathFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81864F1CDE56A100763382 /* TimeSecondHundreathFormatterTests.swift */; settings = {ASSET_TAGS = (); }; };
 		BC9390321CBFCDDE000A951E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9390311CBFCDDE000A951E /* AppDelegate.swift */; };
 		BC9390341CBFCDDE000A951E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9390331CBFCDDE000A951E /* ViewController.swift */; };
 		BC9390371CBFCDDE000A951E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9390351CBFCDDE000A951E /* Main.storyboard */; };
@@ -23,7 +55,7 @@
 		BC93903C1CBFCDDE000A951E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC93903A1CBFCDDE000A951E /* LaunchScreen.xib */; };
 		BC9390481CBFCDDE000A951E /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9390471CBFCDDE000A951E /* TimerTests.swift */; };
 		BC9390541CC01DA2000A951E /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9390531CC01DA2000A951E /* Timer.swift */; };
-		BC9390561CC02E96000A951E /* StopWatchTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9390551CC02E96000A951E /* StopWatchTimeFormatter.swift */; };
+		BC9390561CC02E96000A951E /* CountFormattingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9390551CC02E96000A951E /* CountFormattingProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +71,29 @@
 /* Begin PBXFileReference section */
 		BC0CA1291CCBB1F300C89EB9 /* Counter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		BC0CA12B1CCBB6C000C89EB9 /* CounterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterTests.swift; sourceTree = "<group>"; };
+		BC2E22FD1CD121A7007DA3AF /* CountSecondFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountSecondFormatterTests.swift; sourceTree = "<group>"; };
+		BC53D4041CD505F000F9C1C3 /* CountMinuteFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountMinuteFormatterTests.swift; sourceTree = "<group>"; };
+		BC53D4061CD516D800F9C1C3 /* BaseCountFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCountFormatter.swift; sourceTree = "<group>"; };
+		BC53D40B1CD51AB300F9C1C3 /* CountHourFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountHourFormatterTests.swift; sourceTree = "<group>"; };
 		BC76F9FE1CCC43CA00701C15 /* TimerCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCounter.swift; sourceTree = "<group>"; };
 		BC76FA011CCC488800701C15 /* TimerCounterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCounterTests.swift; sourceTree = "<group>"; };
 		BC76FA061CCD0DFD00701C15 /* TestSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSpy.swift; sourceTree = "<group>"; };
+		BC76FA0C1CCD39E800701C15 /* TimerInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerInterval.swift; sourceTree = "<group>"; };
+		BC76FA0F1CCD3E6700701C15 /* CountHundreathFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountHundreathFormatterTests.swift; sourceTree = "<group>"; };
+		BC76FA111CCD48AA00701C15 /* CountHundreathFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountHundreathFormatter.swift; sourceTree = "<group>"; };
+		BC76FA151CCD4A1700701C15 /* CountSecondFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountSecondFormatter.swift; sourceTree = "<group>"; };
+		BC76FA181CCD4A7000701C15 /* CountMinuteFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountMinuteFormatter.swift; sourceTree = "<group>"; };
+		BC76FA1B1CCD4A9800701C15 /* CountHourFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountHourFormatter.swift; sourceTree = "<group>"; };
+		BC8186301CDD4C9B00763382 /* BaseCountFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCountFormatterTests.swift; sourceTree = "<group>"; };
+		BC8186341CDE4AA100763382 /* TimeFormattingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeFormattingProtocol.swift; sourceTree = "<group>"; };
+		BC8186361CDE4B1E00763382 /* TimeSecondHundreathFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSecondHundreathFormatter.swift; sourceTree = "<group>"; };
+		BC8186381CDE4CC700763382 /* TimeMinuteSecondHundreathFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeMinuteSecondHundreathFormatter.swift; sourceTree = "<group>"; };
+		BC81863C1CDE4EE700763382 /* TimeHoureMinuteSecondFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeHoureMinuteSecondFormatter.swift; sourceTree = "<group>"; };
+		BC8186401CDE502600763382 /* BaseTimeFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTimeFormatter.swift; sourceTree = "<group>"; };
+		BC8186441CDE544500763382 /* BaseTimeFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTimeFormatterTests.swift; sourceTree = "<group>"; };
+		BC81864A1CDE560B00763382 /* TimeHourMinuteSecondFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeHourMinuteSecondFormatterTests.swift; sourceTree = "<group>"; };
+		BC81864D1CDE567900763382 /* TimeMinuteSecondHundreathFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeMinuteSecondHundreathFormatterTests.swift; sourceTree = "<group>"; };
+		BC81864F1CDE56A100763382 /* TimeSecondHundreathFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSecondHundreathFormatterTests.swift; sourceTree = "<group>"; };
 		BC93902C1CBFCDDE000A951E /* StopWatchTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopWatchTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9390301CBFCDDE000A951E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC9390311CBFCDDE000A951E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,7 +105,7 @@
 		BC9390461CBFCDDE000A951E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC9390471CBFCDDE000A951E /* TimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTests.swift; sourceTree = "<group>"; };
 		BC9390531CC01DA2000A951E /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = SOURCE_ROOT; };
-		BC9390551CC02E96000A951E /* StopWatchTimeFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatchTimeFormatter.swift; sourceTree = "<group>"; };
+		BC9390551CC02E96000A951E /* CountFormattingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountFormattingProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +150,20 @@
 				BC9390311CBFCDDE000A951E /* AppDelegate.swift */,
 				BC9390331CBFCDDE000A951E /* ViewController.swift */,
 				BC9390531CC01DA2000A951E /* Timer.swift */,
+				BC76FA0C1CCD39E800701C15 /* TimerInterval.swift */,
 				BC0CA1291CCBB1F300C89EB9 /* Counter.swift */,
 				BC76F9FE1CCC43CA00701C15 /* TimerCounter.swift */,
-				BC9390551CC02E96000A951E /* StopWatchTimeFormatter.swift */,
+				BC9390551CC02E96000A951E /* CountFormattingProtocol.swift */,
+				BC76FA1B1CCD4A9800701C15 /* CountHourFormatter.swift */,
+				BC53D4061CD516D800F9C1C3 /* BaseCountFormatter.swift */,
+				BC76FA111CCD48AA00701C15 /* CountHundreathFormatter.swift */,
+				BC76FA151CCD4A1700701C15 /* CountSecondFormatter.swift */,
+				BC76FA181CCD4A7000701C15 /* CountMinuteFormatter.swift */,
+				BC8186341CDE4AA100763382 /* TimeFormattingProtocol.swift */,
+				BC8186401CDE502600763382 /* BaseTimeFormatter.swift */,
+				BC8186361CDE4B1E00763382 /* TimeSecondHundreathFormatter.swift */,
+				BC8186381CDE4CC700763382 /* TimeMinuteSecondHundreathFormatter.swift */,
+				BC81863C1CDE4EE700763382 /* TimeHoureMinuteSecondFormatter.swift */,
 				BC9390351CBFCDDE000A951E /* Main.storyboard */,
 				BC9390381CBFCDDE000A951E /* Images.xcassets */,
 				BC93903A1CBFCDDE000A951E /* LaunchScreen.xib */,
@@ -123,7 +186,15 @@
 				BC9390471CBFCDDE000A951E /* TimerTests.swift */,
 				BC0CA12B1CCBB6C000C89EB9 /* CounterTests.swift */,
 				BC76FA011CCC488800701C15 /* TimerCounterTests.swift */,
-				BC76FA061CCD0DFD00701C15 /* TestSpy.swift */,
+				BC8186301CDD4C9B00763382 /* BaseCountFormatterTests.swift */,
+				BC76FA0F1CCD3E6700701C15 /* CountHundreathFormatterTests.swift */,
+				BC2E22FD1CD121A7007DA3AF /* CountSecondFormatterTests.swift */,
+				BC53D4041CD505F000F9C1C3 /* CountMinuteFormatterTests.swift */,
+				BC53D40B1CD51AB300F9C1C3 /* CountHourFormatterTests.swift */,
+				BC8186441CDE544500763382 /* BaseTimeFormatterTests.swift */,
+				BC81864A1CDE560B00763382 /* TimeHourMinuteSecondFormatterTests.swift */,
+				BC81864D1CDE567900763382 /* TimeMinuteSecondHundreathFormatterTests.swift */,
+				BC81864F1CDE56A100763382 /* TimeSecondHundreathFormatterTests.swift */,
 				BC9390451CBFCDDE000A951E /* Supporting Files */,
 			);
 			path = StopWatchTimerTests;
@@ -132,6 +203,7 @@
 		BC9390451CBFCDDE000A951E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BC76FA061CCD0DFD00701C15 /* TestSpy.swift */,
 				BC9390461CBFCDDE000A951E /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -240,12 +312,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC9390341CBFCDDE000A951E /* ViewController.swift in Sources */,
+				BC76FA1C1CCD4A9800701C15 /* CountHourFormatter.swift in Sources */,
+				BC53D4071CD516D800F9C1C3 /* BaseCountFormatter.swift in Sources */,
+				BC76FA191CCD4A7000701C15 /* CountMinuteFormatter.swift in Sources */,
 				BC9390321CBFCDDE000A951E /* AppDelegate.swift in Sources */,
+				BC81863D1CDE4EE700763382 /* TimeHoureMinuteSecondFormatter.swift in Sources */,
 				BC9390541CC01DA2000A951E /* Timer.swift in Sources */,
 				BC0CA12A1CCBB1F300C89EB9 /* Counter.swift in Sources */,
+				BC8186391CDE4CC700763382 /* TimeMinuteSecondHundreathFormatter.swift in Sources */,
+				BC76FA161CCD4A1700701C15 /* CountSecondFormatter.swift in Sources */,
+				BC8186411CDE502600763382 /* BaseTimeFormatter.swift in Sources */,
+				BC76FA121CCD48AA00701C15 /* CountHundreathFormatter.swift in Sources */,
+				BC8186371CDE4B1E00763382 /* TimeSecondHundreathFormatter.swift in Sources */,
+				BC76FA0D1CCD39E800701C15 /* TimerInterval.swift in Sources */,
 				BC76F9FF1CCC43CA00701C15 /* TimerCounter.swift in Sources */,
-				BC9390561CC02E96000A951E /* StopWatchTimeFormatter.swift in Sources */,
+				BC9390561CC02E96000A951E /* CountFormattingProtocol.swift in Sources */,
 				BC76FA071CCD0DFD00701C15 /* TestSpy.swift in Sources */,
+				BC8186351CDE4AA100763382 /* TimeFormattingProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,12 +337,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC9390481CBFCDDE000A951E /* TimerTests.swift in Sources */,
+				BC2E22FE1CD121A7007DA3AF /* CountSecondFormatterTests.swift in Sources */,
 				BC76FA001CCC43CA00701C15 /* TimerCounter.swift in Sources */,
+				BC8186501CDE56A100763382 /* TimeSecondHundreathFormatterTests.swift in Sources */,
 				BC76FA041CCC4C8800701C15 /* Counter.swift in Sources */,
+				BC76FA1A1CCD4A7000701C15 /* CountMinuteFormatter.swift in Sources */,
+				BC8186311CDD4C9B00763382 /* BaseCountFormatterTests.swift in Sources */,
+				BC76FA141CCD49FD00701C15 /* CountFormattingProtocol.swift in Sources */,
+				BC81864B1CDE560B00763382 /* TimeHourMinuteSecondFormatterTests.swift in Sources */,
 				BC76FA021CCC488800701C15 /* TimerCounterTests.swift in Sources */,
+				BC76FA0E1CCD39E800701C15 /* TimerInterval.swift in Sources */,
+				BC76FA101CCD3E6700701C15 /* CountHundreathFormatterTests.swift in Sources */,
+				BC76FA131CCD48AA00701C15 /* CountHundreathFormatter.swift in Sources */,
+				BC81864E1CDE567900763382 /* TimeMinuteSecondHundreathFormatterTests.swift in Sources */,
+				BC53D40C1CD51AB300F9C1C3 /* CountHourFormatterTests.swift in Sources */,
+				BC8186451CDE544500763382 /* BaseTimeFormatterTests.swift in Sources */,
+				BC8186461CDE547000763382 /* BaseTimeFormatter.swift in Sources */,
+				BC81864C1CDE562F00763382 /* TimeFormattingProtocol.swift in Sources */,
+				BC76FA1D1CCD4A9800701C15 /* CountHourFormatter.swift in Sources */,
+				BC8186471CDE55E900763382 /* TimeSecondHundreathFormatter.swift in Sources */,
+				BC53D4081CD5173700F9C1C3 /* BaseCountFormatter.swift in Sources */,
 				BC76FA031CCC4C6200701C15 /* Timer.swift in Sources */,
+				BC53D4051CD505F000F9C1C3 /* CountMinuteFormatterTests.swift in Sources */,
+				BC8186491CDE55EF00763382 /* TimeHoureMinuteSecondFormatter.swift in Sources */,
 				BC0CA12C1CCBB6C000C89EB9 /* CounterTests.swift in Sources */,
+				BC76FA171CCD4A1700701C15 /* CountSecondFormatter.swift in Sources */,
 				BC76FA081CCD0DFD00701C15 /* TestSpy.swift in Sources */,
+				BC8186481CDE55EC00763382 /* TimeMinuteSecondHundreathFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

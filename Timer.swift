@@ -10,14 +10,15 @@ import Foundation
 
 public class Timer {
     
-    var timer : NSTimer
+    internal var timer : NSTimer
+    private var timerInterval : NSTimeInterval = TimerInterval.interval;
     
     init () {
         self.timer = NSTimer()
     }
         
     public func startTimer (timerTarget: AnyObject, timerSelector: Selector, timerUserInfo : AnyObject? = nil) -> Void {
-         self.timer =  NSTimer.scheduledTimerWithTimeInterval(1, target: timerTarget, selector: timerSelector, userInfo: timerUserInfo, repeats: true)
+         self.timer =  NSTimer.scheduledTimerWithTimeInterval(self.timerInterval, target: timerTarget, selector: timerSelector, userInfo: timerUserInfo, repeats: true)
     }
     
     public func stopTimer () -> Void {
