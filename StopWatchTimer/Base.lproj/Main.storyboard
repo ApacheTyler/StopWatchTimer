@@ -86,7 +86,7 @@
                                     <action selector="saveTimeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1YD-px-1ma"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIe-Jy-XqF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIe-Jy-XqF">
                                 <rect key="frame" x="20" y="188" width="560" height="220"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="dIe-Jy-XqF" secondAttribute="height" multiplier="568:223" id="Qfq-T6-1g4"/>

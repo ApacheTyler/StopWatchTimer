@@ -20,6 +20,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.StartStopSegment.selectedSegmentIndex = 1
+        self.TimeLabel.numberOfLines = 1
+        self.TimeLabel.adjustsFontSizeToFitWidth = true
+        self.TimeLabel.minimumScaleFactor = 0.5
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,6 +45,7 @@ class ViewController: UIViewController {
         default:
             self.formatter.setFormatterToHMS()
         }
+        self.setTimeLabelToCurrentCount()
     }
     
     @IBAction func ResetTimeButton(sender: UIButton) {
@@ -82,6 +86,12 @@ class ViewController: UIViewController {
     
     func updateLabelWithString (updateString: String) -> Void {
         self.TimeLabel.text = updateString
+    }
+    
+    func setTimeLabelToCurrentCount () -> Void {
+        let currentCount = Double(self.timerCounter.getCurrentCount())
+        let currentCountFormattedAsTime = self.formatter.format(currentCount)
+        self.updateLabelWithString(currentCountFormattedAsTime)
     }
     
     func stopTimer() -> Void {
