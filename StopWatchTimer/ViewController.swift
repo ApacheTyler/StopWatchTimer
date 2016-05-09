@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var timerCounter = TimerCounter()
+    var formatter = StopWatchTimeFormatter()
     
     @IBOutlet weak var TimeLabel: UILabel!
     @IBOutlet weak var FormatSegment: UISegmentedControl!
@@ -33,13 +34,13 @@ class ViewController: UIViewController {
         switch FormatSegment.selectedSegmentIndex
         {
         case 0:
-            self.formatHMS(0)
+            self.formatter.setFormatterToHMS()
         case 1:
-            self.formatMST(0)
+            self.formatter.setFormatterToMSH()
         case 2:
-            self.formatST(0)
+            self.formatter.setFormatterToSH()
         default:
-            self.formatHMS(0)
+            self.formatter.setFormatterToHMS()
         }
     }
     
@@ -74,8 +75,8 @@ class ViewController: UIViewController {
         self.timerCounter.start(self.updateLabelWithTimerCount)
     }
     
-    func updateLabelWithTimerCount (countToSetLabelTo : Int) -> Void {
-        let stringOfTimerCount = String(countToSetLabelTo)
+    func updateLabelWithTimerCount(countToSetLabelTo : Int) -> Void {
+        let stringOfTimerCount = self.formatter.format(Double(countToSetLabelTo))
         self.updateLabelWithString(stringOfTimerCount)
     }
     
@@ -87,15 +88,15 @@ class ViewController: UIViewController {
         self.timerCounter.stop()
     }
     
-    func formatHMS(time: Int) -> Void {
+    func formatHMS() -> Void {
         print("Formatting time as HMS")
     }
     
-    func formatMST(time: Int) -> Void {
+    func formatMST() -> Void {
         print("Formatting time as MST")
     }
     
-    func formatST(time: Int) -> Void {
+    func formatST() -> Void {
         print("Formatting time as ST")
     }
     
