@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.StartStopSegment.selectedSegmentIndex = 1
+        self.FormatSegment.selectedSegmentIndex = 2
+        // Set up TimeLabel
         self.TimeLabel.numberOfLines = 1
         self.TimeLabel.adjustsFontSizeToFitWidth = true
         self.TimeLabel.minimumScaleFactor = 0.5
@@ -79,6 +81,10 @@ class ViewController: UIViewController {
         self.timerCounter.start(self.updateLabelWithTimerCount)
     }
     
+    func stopTimer() -> Void {
+        self.timerCounter.stop()
+    }
+    
     func updateLabelWithTimerCount(countToSetLabelTo : Int) -> Void {
         let stringOfTimerCount = self.formatter.format(Double(countToSetLabelTo))
         self.updateLabelWithString(stringOfTimerCount)
@@ -94,22 +100,6 @@ class ViewController: UIViewController {
         self.updateLabelWithString(currentCountFormattedAsTime)
     }
     
-    func stopTimer() -> Void {
-        self.timerCounter.stop()
-    }
-    
-    func formatHMS() -> Void {
-        print("Formatting time as HMS")
-    }
-    
-    func formatMST() -> Void {
-        print("Formatting time as MST")
-    }
-    
-    func formatST() -> Void {
-        print("Formatting time as ST")
-    }
-    
     func resetTimer() -> Void {
         self.timerCounter.reset()
         let currentCount = self.timerCounter.getCurrentCount()
@@ -117,9 +107,5 @@ class ViewController: UIViewController {
         self.updateTimerStatusBasedOnStartStopSegmentSelectedIndex()
     }
     
-    func printFormattedTime(formatString : String, time : Int) -> String {
-        return "Printing formatted time";
-    }
-
 }
 

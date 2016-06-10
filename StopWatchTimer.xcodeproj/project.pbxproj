@@ -50,6 +50,7 @@
 		BC8186501CDE56A100763382 /* TimeSecondHundreathFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81864F1CDE56A100763382 /* TimeSecondHundreathFormatterTests.swift */; settings = {ASSET_TAGS = (); }; };
 		BC8186521CDE862000763382 /* StopWatchTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8186511CDE862000763382 /* StopWatchTimeFormatter.swift */; settings = {ASSET_TAGS = (); }; };
 		BC8186541CDE87B100763382 /* StopWatchTimerFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8186531CDE87B100763382 /* StopWatchTimerFormats.swift */; settings = {ASSET_TAGS = (); }; };
+		BC9291981D0A237C00832A4F /* SaveTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9291971D0A237C00832A4F /* SaveTimeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		BC9390321CBFCDDE000A951E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9390311CBFCDDE000A951E /* AppDelegate.swift */; };
 		BC9390341CBFCDDE000A951E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9390331CBFCDDE000A951E /* ViewController.swift */; };
 		BC9390371CBFCDDE000A951E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9390351CBFCDDE000A951E /* Main.storyboard */; };
@@ -98,6 +99,7 @@
 		BC81864F1CDE56A100763382 /* TimeSecondHundreathFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSecondHundreathFormatterTests.swift; sourceTree = "<group>"; };
 		BC8186511CDE862000763382 /* StopWatchTimeFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatchTimeFormatter.swift; sourceTree = "<group>"; };
 		BC8186531CDE87B100763382 /* StopWatchTimerFormats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatchTimerFormats.swift; sourceTree = "<group>"; };
+		BC9291971D0A237C00832A4F /* SaveTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveTimeViewController.swift; sourceTree = "<group>"; };
 		BC93902C1CBFCDDE000A951E /* StopWatchTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopWatchTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9390301CBFCDDE000A951E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC9390311CBFCDDE000A951E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +155,8 @@
 			children = (
 				BC9390311CBFCDDE000A951E /* AppDelegate.swift */,
 				BC9390331CBFCDDE000A951E /* ViewController.swift */,
+				BC9291971D0A237C00832A4F /* SaveTimeViewController.swift */,
+				BC93902F1CBFCDDE000A951E /* Supporting Files */,
 				BC9390531CC01DA2000A951E /* Timer.swift */,
 				BC76FA0C1CCD39E800701C15 /* TimerInterval.swift */,
 				BC0CA1291CCBB1F300C89EB9 /* Counter.swift */,
@@ -173,7 +177,6 @@
 				BC9390351CBFCDDE000A951E /* Main.storyboard */,
 				BC9390381CBFCDDE000A951E /* Images.xcassets */,
 				BC93903A1CBFCDDE000A951E /* LaunchScreen.xib */,
-				BC93902F1CBFCDDE000A951E /* Supporting Files */,
 			);
 			path = StopWatchTimer;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				BC8186541CDE87B100763382 /* StopWatchTimerFormats.swift in Sources */,
 				BC8186371CDE4B1E00763382 /* TimeSecondHundreathFormatter.swift in Sources */,
 				BC76FA0D1CCD39E800701C15 /* TimerInterval.swift in Sources */,
+				BC9291981D0A237C00832A4F /* SaveTimeViewController.swift in Sources */,
 				BC76F9FF1CCC43CA00701C15 /* TimerCounter.swift in Sources */,
 				BC9390561CC02E96000A951E /* CountFormattingProtocol.swift in Sources */,
 				BC76FA071CCD0DFD00701C15 /* TestSpy.swift in Sources */,
