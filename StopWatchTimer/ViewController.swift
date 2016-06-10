@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var timerCounter = TimerCounter()
-    var formatter = StopWatchTimeFormatter()
+    var timerCounter = TimerCounterInstance.instance
+    var formatter = StopWatchTimeFormatterInstance.instance
     
     @IBOutlet weak var TimeLabel: UILabel!
     @IBOutlet weak var FormatSegment: UISegmentedControl!
@@ -59,7 +59,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func saveTimeButtonPressed(sender: AnyObject) {
-        print("Saving time")
+        self.stopTimer()
+        self.StartStopSegment.selectedSegmentIndex = 1
+        print("Switching to saved time view")
     }
     
     func updateTimerStatusBasedOnStartStopSegmentSelectedIndex() -> Void {
@@ -102,8 +104,9 @@ class ViewController: UIViewController {
     
     func resetTimer() -> Void {
         self.timerCounter.reset()
-        let currentCount = self.timerCounter.getCurrentCount()
-        self.updateLabelWithString(String(currentCount))
+        let currentCount = Double(self.timerCounter.getCurrentCount())
+        let formattedCurrentCount = self.formatter.format(currentCount)
+        self.updateLabelWithString(String(formattedCurrentCount))
         self.updateTimerStatusBasedOnStartStopSegmentSelectedIndex()
     }
     

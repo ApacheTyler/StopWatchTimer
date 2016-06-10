@@ -59,6 +59,8 @@
 		BC9390481CBFCDDE000A951E /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9390471CBFCDDE000A951E /* TimerTests.swift */; };
 		BC9390541CC01DA2000A951E /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9390531CC01DA2000A951E /* Timer.swift */; };
 		BC9390561CC02E96000A951E /* CountFormattingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9390551CC02E96000A951E /* CountFormattingProtocol.swift */; };
+		BCE400F21D0B6337000A19C5 /* TimerCounterInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE400F11D0B6337000A19C5 /* TimerCounterInstance.swift */; settings = {ASSET_TAGS = (); }; };
+		BCE400F41D0B6367000A19C5 /* StopWatchTimeFormatterInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE400F31D0B6367000A19C5 /* StopWatchTimeFormatterInstance.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +114,8 @@
 		BC9390471CBFCDDE000A951E /* TimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTests.swift; sourceTree = "<group>"; };
 		BC9390531CC01DA2000A951E /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = SOURCE_ROOT; };
 		BC9390551CC02E96000A951E /* CountFormattingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountFormattingProtocol.swift; sourceTree = "<group>"; };
+		BCE400F11D0B6337000A19C5 /* TimerCounterInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCounterInstance.swift; sourceTree = "<group>"; };
+		BCE400F31D0B6367000A19C5 /* StopWatchTimeFormatterInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatchTimeFormatterInstance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,7 @@
 				BC9390311CBFCDDE000A951E /* AppDelegate.swift */,
 				BC9390331CBFCDDE000A951E /* ViewController.swift */,
 				BC9291971D0A237C00832A4F /* SaveTimeViewController.swift */,
+				BCE400F11D0B6337000A19C5 /* TimerCounterInstance.swift */,
 				BC93902F1CBFCDDE000A951E /* Supporting Files */,
 				BC9390531CC01DA2000A951E /* Timer.swift */,
 				BC76FA0C1CCD39E800701C15 /* TimerInterval.swift */,
@@ -177,6 +182,7 @@
 				BC9390351CBFCDDE000A951E /* Main.storyboard */,
 				BC9390381CBFCDDE000A951E /* Images.xcassets */,
 				BC93903A1CBFCDDE000A951E /* LaunchScreen.xib */,
+				BCE400F31D0B6367000A19C5 /* StopWatchTimeFormatterInstance.swift */,
 			);
 			path = StopWatchTimer;
 			sourceTree = "<group>";
@@ -331,8 +337,10 @@
 				BC8186391CDE4CC700763382 /* TimeMinuteSecondHundreathFormatter.swift in Sources */,
 				BC76FA161CCD4A1700701C15 /* CountSecondFormatter.swift in Sources */,
 				BC8186411CDE502600763382 /* BaseTimeFormatter.swift in Sources */,
+				BCE400F21D0B6337000A19C5 /* TimerCounterInstance.swift in Sources */,
 				BC76FA121CCD48AA00701C15 /* CountHundreathFormatter.swift in Sources */,
 				BC8186541CDE87B100763382 /* StopWatchTimerFormats.swift in Sources */,
+				BCE400F41D0B6367000A19C5 /* StopWatchTimeFormatterInstance.swift in Sources */,
 				BC8186371CDE4B1E00763382 /* TimeSecondHundreathFormatter.swift in Sources */,
 				BC76FA0D1CCD39E800701C15 /* TimerInterval.swift in Sources */,
 				BC9291981D0A237C00832A4F /* SaveTimeViewController.swift in Sources */,
