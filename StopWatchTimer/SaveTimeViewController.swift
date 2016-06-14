@@ -9,11 +9,21 @@
 import UIKit
 
 class SaveTimeViewController: UIViewController {
-
+    
+    var formatter = StopWatchTimeFormatterInstance.instance
+    var timerCounter = TimerCounterInstance.instance
+    
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var savedTimeLabel: UILabel!
+    @IBOutlet weak var formatSegmentOutlet: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        //Set format label to correct index
+        //Format current time
+        //Set to savedTimeLabel text
+        //Highlight title text with it defaulted to the date.
+        //self.savedTimeLabel.text
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,18 +31,14 @@ class SaveTimeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func formatSegmentValueChanged(sender: AnyObject) {
+        //TODO: Format Saved Time
     }
-    */
+    
+    
     
     @IBAction func ConfirmButton(sender: UIButton) {
+        //TODO: Save to local storage.
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     

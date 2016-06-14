@@ -9,16 +9,10 @@
 import Foundation
 
 
-public class StopWatchTimerFormats {
+public enum StopWatchTimerFormats {
     
-    var SH_FORMAT: TimeFormattingProtocol
-    var MSH_FORMAT: TimeFormattingProtocol
-    var HMS_FORMAT: TimeFormattingProtocol
-    
-    init () {
-        self.SH_FORMAT = TimeSecondHundreathFormatter()
-        self.MSH_FORMAT = TimeMinuteSecondHundreathFormatter()
-        self.HMS_FORMAT = TimeHourMinuteSecondFormatter()
-    }
-    
+    case SH_FORMAT
+    case MSH_FORMAT
+    case HMS_FORMAT
+        
 }

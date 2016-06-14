@@ -274,7 +274,7 @@
                                     <segment title="S:H"/>
                                 </segments>
                                 <connections>
-                                    <action selector="FormatSegmentIndexChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="8OM-C1-hCR"/>
+                                    <action selector="formatSegmentValueChanged:" destination="sP3-Gi-Rmh" eventType="valueChanged" id="rDM-cr-fGl"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
@@ -328,6 +328,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="formatSegmentOutlet" destination="gNn-ef-Med" id="O1b-xw-PJa"/>
+                        <outlet property="savedTimeLabel" destination="CfW-C1-ghE" id="Mrt-yF-VTx"/>
+                        <outlet property="titleTextField" destination="Xmz-fv-rU2" id="Rc1-td-tfM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I5P-6v-kG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
