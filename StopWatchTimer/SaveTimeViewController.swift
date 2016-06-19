@@ -19,11 +19,12 @@ class SaveTimeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Set format label to correct index
-        //Format current time
-        //Set to savedTimeLabel text
-        //Highlight title text with it defaulted to the date.
-        //self.savedTimeLabel.text
+        self.setTimeFormatterToCurrentFormatIndex()
+        self.setSavedTimeLabelToCurrentFormattedTime()
+        self.titleTextField.text = CurrentFormattedDate.getTodaysDate()
+        self.titleTextField.becomeFirstResponder()
+        let tapGesture = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tapGesture);
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,15 +32,60 @@ class SaveTimeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func formatSegmentValueChanged(sender: AnyObject) {
-        //TODO: Format Saved Time
+    @IBAction func titleLabelDidEndOnExit(sender: AnyObject) {
+        self.resignFirstResponder()
+        if(self.titleTextField.text == "") {
+            self.titleTextField.text = CurrentFormattedDate.getTodaysDate()
+        }
     }
     
-    
+    @IBAction func formatSegmentValueChanged(sender: AnyObject) {
+        self.updateCurrentFormatterFormat()
+        self.setSavedTimeLabelToCurrentFormattedTime()
+    }
     
     @IBAction func ConfirmButton(sender: UIButton) {
         //TODO: Save to local storage.
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func setTimeFormatterToCurrentFormatIndex () -> Void {
+        let currentFormat = self.formatter.currentFormat
+        switch currentFormat {
+        case StopWatchTimerFormats.SH_FORMAT:
+            self.formatSegmentOutlet.selectedSegmentIndex = 2
+            break
+        case StopWatchTimerFormats.MSH_FORMAT:
+            self.formatSegmentOutlet.selectedSegmentIndex = 1
+            break
+        case StopWatchTimerFormats.HMS_FORMAT:
+            self.formatSegmentOutlet.selectedSegmentIndex = 0
+            break
+        }
+    }
+    
+    func updateCurrentFormatterFormat () -> Void {
+        switch self.formatSegmentOutlet.selectedSegmentIndex
+        {
+        case 0:
+            self.formatter.setFormatterToHMS()
+        case 1:
+            self.formatter.setFormatterToMSH()
+        case 2:
+            self.formatter.setFormatterToSH()
+        default:
+            self.formatter.setFormatterToHMS()
+        }
+    }
+    
+    func setSavedTimeLabelToCurrentFormattedTime() -> Void {
+        let currentCount = Double(self.timerCounter.getCurrentCount())
+        let currentCountFormattedAsTime = self.formatter.format(currentCount)
+        self.savedTimeLabel.text = currentCountFormattedAsTime
+    }
+    
+    func dismissKeyboard () -> Void {
+        view.endEditing(true)
     }
     
 

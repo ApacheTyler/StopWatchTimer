@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BC0CA12A1CCBB1F300C89EB9 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CA1291CCBB1F300C89EB9 /* Counter.swift */; };
 		BC0CA12C1CCBB6C000C89EB9 /* CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CA12B1CCBB6C000C89EB9 /* CounterTests.swift */; };
+		BC261EDF1D16FC22007662D8 /* CurrentFormattedDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC261EDE1D16FC22007662D8 /* CurrentFormattedDate.swift */; settings = {ASSET_TAGS = (); }; };
 		BC2E22FE1CD121A7007DA3AF /* CountSecondFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2E22FD1CD121A7007DA3AF /* CountSecondFormatterTests.swift */; settings = {ASSET_TAGS = (); }; };
 		BC53D4051CD505F000F9C1C3 /* CountMinuteFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC53D4041CD505F000F9C1C3 /* CountMinuteFormatterTests.swift */; settings = {ASSET_TAGS = (); }; };
 		BC53D4071CD516D800F9C1C3 /* BaseCountFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC53D4061CD516D800F9C1C3 /* BaseCountFormatter.swift */; settings = {ASSET_TAGS = (); }; };
@@ -77,6 +78,7 @@
 /* Begin PBXFileReference section */
 		BC0CA1291CCBB1F300C89EB9 /* Counter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		BC0CA12B1CCBB6C000C89EB9 /* CounterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterTests.swift; sourceTree = "<group>"; };
+		BC261EDE1D16FC22007662D8 /* CurrentFormattedDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentFormattedDate.swift; sourceTree = "<group>"; };
 		BC2E22FD1CD121A7007DA3AF /* CountSecondFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountSecondFormatterTests.swift; sourceTree = "<group>"; };
 		BC53D4041CD505F000F9C1C3 /* CountMinuteFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountMinuteFormatterTests.swift; sourceTree = "<group>"; };
 		BC53D4061CD516D800F9C1C3 /* BaseCountFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCountFormatter.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				BC9390381CBFCDDE000A951E /* Images.xcassets */,
 				BC93903A1CBFCDDE000A951E /* LaunchScreen.xib */,
 				BCE400F31D0B6367000A19C5 /* StopWatchTimeFormatterInstance.swift */,
+				BC261EDE1D16FC22007662D8 /* CurrentFormattedDate.swift */,
 			);
 			path = StopWatchTimer;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				BC81863D1CDE4EE700763382 /* TimeHoureMinuteSecondFormatter.swift in Sources */,
 				BC9390541CC01DA2000A951E /* Timer.swift in Sources */,
 				BC0CA12A1CCBB1F300C89EB9 /* Counter.swift in Sources */,
+				BC261EDF1D16FC22007662D8 /* CurrentFormattedDate.swift in Sources */,
 				BC8186391CDE4CC700763382 /* TimeMinuteSecondHundreathFormatter.swift in Sources */,
 				BC76FA161CCD4A1700701C15 /* CountSecondFormatter.swift in Sources */,
 				BC8186411CDE502600763382 /* BaseTimeFormatter.swift in Sources */,

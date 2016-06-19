@@ -38,6 +38,7 @@ class StopWatchTimeFormatter {
     private func trySetTimeFormatter(format: StopWatchTimerFormats) -> Void {
         do {
             try self.formatter = self.getFormatterFromAvailableFormat(format)
+            self.currentFormat = format
         } catch {
             print("Failed to set time format")
         }
