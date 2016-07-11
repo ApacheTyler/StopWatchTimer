@@ -32,11 +32,12 @@ class SaveTimeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(animated: Bool) {
+        self.setTimeFormatterToCurrentFormatIndex()
+    }
+    
     @IBAction func titleLabelDidEndOnExit(sender: AnyObject) {
         self.resignFirstResponder()
-        if(self.titleTextField.text == "") {
-            self.titleTextField.text = CurrentFormattedDate.getTodaysDate()
-        }
     }
     
     @IBAction func formatSegmentValueChanged(sender: AnyObject) {
@@ -82,6 +83,12 @@ class SaveTimeViewController: UIViewController {
         let currentCount = Double(self.timerCounter.getCurrentCount())
         let currentCountFormattedAsTime = self.formatter.format(currentCount)
         self.savedTimeLabel.text = currentCountFormattedAsTime
+    }
+    
+    func setTimeToCurrentDateIfTitleIsEmptyString() -> Void {
+        if(self.titleTextField.text == "") {
+            self.titleTextField.text = CurrentFormattedDate.getTodaysDate()
+        }
     }
     
     func dismissKeyboard () -> Void {

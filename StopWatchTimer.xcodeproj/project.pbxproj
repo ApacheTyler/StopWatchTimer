@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC0623771D33306200ADF897 /* SavedTimeCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC0623751D33306200ADF897 /* SavedTimeCoreData.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		BC0623791D33357C00ADF897 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0623781D33357C00ADF897 /* CoreData.framework */; };
 		BC0CA12A1CCBB1F300C89EB9 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CA1291CCBB1F300C89EB9 /* Counter.swift */; };
 		BC0CA12C1CCBB6C000C89EB9 /* CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CA12B1CCBB6C000C89EB9 /* CounterTests.swift */; };
 		BC261EDF1D16FC22007662D8 /* CurrentFormattedDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC261EDE1D16FC22007662D8 /* CurrentFormattedDate.swift */; settings = {ASSET_TAGS = (); }; };
@@ -76,6 +78,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC0623761D33306200ADF897 /* SavedTimeCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SavedTimeCoreData.xcdatamodel; sourceTree = "<group>"; };
+		BC0623781D33357C00ADF897 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		BC0CA1291CCBB1F300C89EB9 /* Counter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		BC0CA12B1CCBB6C000C89EB9 /* CounterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterTests.swift; sourceTree = "<group>"; };
 		BC261EDE1D16FC22007662D8 /* CurrentFormattedDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentFormattedDate.swift; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC0623791D33357C00ADF897 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +148,7 @@
 		BC9390231CBFCDDE000A951E = {
 			isa = PBXGroup;
 			children = (
+				BC0623781D33357C00ADF897 /* CoreData.framework */,
 				BC93902E1CBFCDDE000A951E /* StopWatchTimer */,
 				BC9390441CBFCDDE000A951E /* StopWatchTimerTests */,
 				BC93902D1CBFCDDE000A951E /* Products */,
@@ -164,6 +170,7 @@
 				BC9390311CBFCDDE000A951E /* AppDelegate.swift */,
 				BC9390331CBFCDDE000A951E /* ViewController.swift */,
 				BC9291971D0A237C00832A4F /* SaveTimeViewController.swift */,
+				BC0623751D33306200ADF897 /* SavedTimeCoreData.xcdatamodeld */,
 				BCE400F11D0B6337000A19C5 /* TimerCounterInstance.swift */,
 				BC93902F1CBFCDDE000A951E /* Supporting Files */,
 				BC9390531CC01DA2000A951E /* Timer.swift */,
@@ -347,6 +354,7 @@
 				BCE400F21D0B6337000A19C5 /* TimerCounterInstance.swift in Sources */,
 				BC76FA121CCD48AA00701C15 /* CountHundreathFormatter.swift in Sources */,
 				BC8186541CDE87B100763382 /* StopWatchTimerFormats.swift in Sources */,
+				BC0623771D33306200ADF897 /* SavedTimeCoreData.xcdatamodeld in Sources */,
 				BCE400F41D0B6367000A19C5 /* StopWatchTimeFormatterInstance.swift in Sources */,
 				BC8186371CDE4B1E00763382 /* TimeSecondHundreathFormatter.swift in Sources */,
 				BC76FA0D1CCD39E800701C15 /* TimerInterval.swift in Sources */,
@@ -586,6 +594,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BC0623751D33306200ADF897 /* SavedTimeCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BC0623761D33306200ADF897 /* SavedTimeCoreData.xcdatamodel */,
+			);
+			currentVersion = BC0623761D33306200ADF897 /* SavedTimeCoreData.xcdatamodel */;
+			path = SavedTimeCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BC9390241CBFCDDE000A951E /* Project object */;
 }
