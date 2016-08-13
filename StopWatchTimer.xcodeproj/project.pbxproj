@@ -55,7 +55,7 @@
 		BC8186541CDE87B100763382 /* StopWatchTimerFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8186531CDE87B100763382 /* StopWatchTimerFormats.swift */; settings = {ASSET_TAGS = (); }; };
 		BC9291981D0A237C00832A4F /* SaveTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9291971D0A237C00832A4F /* SaveTimeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		BC9390321CBFCDDE000A951E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9390311CBFCDDE000A951E /* AppDelegate.swift */; };
-		BC9390341CBFCDDE000A951E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9390331CBFCDDE000A951E /* ViewController.swift */; };
+		BC9390341CBFCDDE000A951E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9390331CBFCDDE000A951E /* MainViewController.swift */; };
 		BC9390371CBFCDDE000A951E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9390351CBFCDDE000A951E /* Main.storyboard */; };
 		BC9390391CBFCDDE000A951E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9390381CBFCDDE000A951E /* Images.xcassets */; };
 		BC93903C1CBFCDDE000A951E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC93903A1CBFCDDE000A951E /* LaunchScreen.xib */; };
@@ -112,7 +112,7 @@
 		BC93902C1CBFCDDE000A951E /* StopWatchTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopWatchTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9390301CBFCDDE000A951E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC9390311CBFCDDE000A951E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC9390331CBFCDDE000A951E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC9390331CBFCDDE000A951E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BC9390361CBFCDDE000A951E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC9390381CBFCDDE000A951E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BC93903B1CBFCDDE000A951E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -168,34 +168,15 @@
 			isa = PBXGroup;
 			children = (
 				BC9390311CBFCDDE000A951E /* AppDelegate.swift */,
-				BC9390331CBFCDDE000A951E /* ViewController.swift */,
-				BC9291971D0A237C00832A4F /* SaveTimeViewController.swift */,
-				BC0623751D33306200ADF897 /* SavedTimeCoreData.xcdatamodeld */,
-				BCE400F11D0B6337000A19C5 /* TimerCounterInstance.swift */,
+				BCCCD5E71D5F5CAF00A4E6E8 /* Controllers */,
+				BCCCD5E51D5F5AF700A4E6E8 /* Models */,
 				BC93902F1CBFCDDE000A951E /* Supporting Files */,
-				BC9390531CC01DA2000A951E /* Timer.swift */,
-				BC76FA0C1CCD39E800701C15 /* TimerInterval.swift */,
-				BC0CA1291CCBB1F300C89EB9 /* Counter.swift */,
-				BC76F9FE1CCC43CA00701C15 /* TimerCounter.swift */,
-				BC8186511CDE862000763382 /* StopWatchTimeFormatter.swift */,
-				BC8186531CDE87B100763382 /* StopWatchTimerFormats.swift */,
-				BC95E7291D10949C00201329 /* StopWatchTimerFormatsErrors.swift */,
-				BC9390551CC02E96000A951E /* CountFormattingProtocol.swift */,
-				BC76FA1B1CCD4A9800701C15 /* CountHourFormatter.swift */,
-				BC53D4061CD516D800F9C1C3 /* BaseCountFormatter.swift */,
-				BC76FA111CCD48AA00701C15 /* CountHundreathFormatter.swift */,
-				BC76FA151CCD4A1700701C15 /* CountSecondFormatter.swift */,
-				BC76FA181CCD4A7000701C15 /* CountMinuteFormatter.swift */,
-				BC8186341CDE4AA100763382 /* TimeFormattingProtocol.swift */,
-				BC8186401CDE502600763382 /* BaseTimeFormatter.swift */,
-				BC8186361CDE4B1E00763382 /* TimeSecondHundreathFormatter.swift */,
-				BC8186381CDE4CC700763382 /* TimeMinuteSecondHundreathFormatter.swift */,
-				BC81863C1CDE4EE700763382 /* TimeHoureMinuteSecondFormatter.swift */,
+				BCCCD5E31D5F5A6100A4E6E8 /* TimerCounter */,
+				BCCCD5E41D5F5AD200A4E6E8 /* TimeFormatter */,
 				BC9390351CBFCDDE000A951E /* Main.storyboard */,
+				BCCCD5E61D5F5C6500A4E6E8 /* CoreData */,
 				BC9390381CBFCDDE000A951E /* Images.xcassets */,
 				BC93903A1CBFCDDE000A951E /* LaunchScreen.xib */,
-				BCE400F31D0B6367000A19C5 /* StopWatchTimeFormatterInstance.swift */,
-				BC261EDE1D16FC22007662D8 /* CurrentFormattedDate.swift */,
 			);
 			path = StopWatchTimer;
 			sourceTree = "<group>";
@@ -235,6 +216,65 @@
 				BC9390461CBFCDDE000A951E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCCCD5E31D5F5A6100A4E6E8 /* TimerCounter */ = {
+			isa = PBXGroup;
+			children = (
+				BC9390531CC01DA2000A951E /* Timer.swift */,
+				BC76FA0C1CCD39E800701C15 /* TimerInterval.swift */,
+				BC0CA1291CCBB1F300C89EB9 /* Counter.swift */,
+				BC76F9FE1CCC43CA00701C15 /* TimerCounter.swift */,
+			);
+			name = TimerCounter;
+			sourceTree = "<group>";
+		};
+		BCCCD5E41D5F5AD200A4E6E8 /* TimeFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				BC8186511CDE862000763382 /* StopWatchTimeFormatter.swift */,
+				BC8186531CDE87B100763382 /* StopWatchTimerFormats.swift */,
+				BC95E7291D10949C00201329 /* StopWatchTimerFormatsErrors.swift */,
+				BC9390551CC02E96000A951E /* CountFormattingProtocol.swift */,
+				BC76FA1B1CCD4A9800701C15 /* CountHourFormatter.swift */,
+				BC53D4061CD516D800F9C1C3 /* BaseCountFormatter.swift */,
+				BC76FA111CCD48AA00701C15 /* CountHundreathFormatter.swift */,
+				BC76FA151CCD4A1700701C15 /* CountSecondFormatter.swift */,
+				BC76FA181CCD4A7000701C15 /* CountMinuteFormatter.swift */,
+				BC8186341CDE4AA100763382 /* TimeFormattingProtocol.swift */,
+				BC8186401CDE502600763382 /* BaseTimeFormatter.swift */,
+				BC8186361CDE4B1E00763382 /* TimeSecondHundreathFormatter.swift */,
+				BC8186381CDE4CC700763382 /* TimeMinuteSecondHundreathFormatter.swift */,
+				BC81863C1CDE4EE700763382 /* TimeHoureMinuteSecondFormatter.swift */,
+			);
+			name = TimeFormatter;
+			sourceTree = "<group>";
+		};
+		BCCCD5E51D5F5AF700A4E6E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BCE400F31D0B6367000A19C5 /* StopWatchTimeFormatterInstance.swift */,
+				BC261EDE1D16FC22007662D8 /* CurrentFormattedDate.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BCCCD5E61D5F5C6500A4E6E8 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				BC0623751D33306200ADF897 /* SavedTimeCoreData.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		BCCCD5E71D5F5CAF00A4E6E8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC9390331CBFCDDE000A951E /* MainViewController.swift */,
+				BC9291971D0A237C00832A4F /* SaveTimeViewController.swift */,
+				BCE400F11D0B6337000A19C5 /* TimerCounterInstance.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,7 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC9390341CBFCDDE000A951E /* ViewController.swift in Sources */,
+				BC9390341CBFCDDE000A951E /* MainViewController.swift in Sources */,
 				BC76FA1C1CCD4A9800701C15 /* CountHourFormatter.swift in Sources */,
 				BC53D4071CD516D800F9C1C3 /* BaseCountFormatter.swift in Sources */,
 				BC76FA191CCD4A7000701C15 /* CountMinuteFormatter.swift in Sources */,
