@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class SaveTimeViewController: UIViewController {
     
@@ -46,7 +47,17 @@ class SaveTimeViewController: UIViewController {
     }
     
     @IBAction func ConfirmButton(sender: UIButton) {
-        //TODO: Save to local storage.
+        let timeValue = self.timerCounter.getCurrentCount()
+        let timeFormat = self.formatter.currentFormat.rawValue
+        let title = self.getSavedTimeTitle()
+        let timeToSave = SavedTime(timeFormat: timeFormat, timerValue: timeValue, title: title)
+        
+        do {
+            try SavedTimeCoreDataDelegate.addSavedTime(timeToSave)
+        } catch _ {
+            self.showFailedToSaveTimeAlert()
+        }
+        
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -91,9 +102,24 @@ class SaveTimeViewController: UIViewController {
         }
     }
     
-    func dismissKeyboard () -> Void {
+    func dismissKeyboard() -> Void {
         view.endEditing(true)
     }
     
+    func showFailedToSaveTimeAlert() -> Void {
+        let alert = UIAlertController(title: "Failed To Save Time", message: "An unexpected error occured and you time was not saved", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func getSavedTimeTitle() -> String {
+        var title = ""
+        if let titleTextFieldValue = self.titleTextField.text {
+            title = titleTextFieldValue
+        } else {
+            title = CurrentFormattedDate.getTodaysDate()
+        }
+        return title
+    }
 
 }

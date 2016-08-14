@@ -63,6 +63,14 @@
 		BC9390541CC01DA2000A951E /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9390531CC01DA2000A951E /* Timer.swift */; };
 		BC9390561CC02E96000A951E /* CountFormattingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9390551CC02E96000A951E /* CountFormattingProtocol.swift */; };
 		BC95E72A1D10949C00201329 /* StopWatchTimerFormatsErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95E7291D10949C00201329 /* StopWatchTimerFormatsErrors.swift */; settings = {ASSET_TAGS = (); }; };
+		BCB6B9431D5F6CF000A831B2 /* SavedTimeManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6B9421D5F6CF000A831B2 /* SavedTimeManagedObject.swift */; settings = {ASSET_TAGS = (); }; };
+		BCB6B9451D5F721D00A831B2 /* SavedTimeKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6B9441D5F721D00A831B2 /* SavedTimeKeys.swift */; settings = {ASSET_TAGS = (); }; };
+		BCB6B9471D5F74D300A831B2 /* TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6B9461D5F74D300A831B2 /* TimeFormatter.swift */; settings = {ASSET_TAGS = (); }; };
+		BCB6B9491D60CBA000A831B2 /* SavedTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6B9481D60CBA000A831B2 /* SavedTime.swift */; settings = {ASSET_TAGS = (); }; };
+		BCB6B94B1D60CC6000A831B2 /* SavedTimeCoreDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6B94A1D60CC6000A831B2 /* SavedTimeCoreDataDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		BCCCD5E91D5F628400A4E6E8 /* SavedTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCCD5E81D5F628400A4E6E8 /* SavedTimeTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BCCCD5EB1D5F62E500A4E6E8 /* SavedTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCCD5EA1D5F62E500A4E6E8 /* SavedTimeTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		BCCCD5F51D5F6B6400A4E6E8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0623781D33357C00ADF897 /* CoreData.framework */; };
 		BCE400F21D0B6337000A19C5 /* TimerCounterInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE400F11D0B6337000A19C5 /* TimerCounterInstance.swift */; settings = {ASSET_TAGS = (); }; };
 		BCE400F41D0B6367000A19C5 /* StopWatchTimeFormatterInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE400F31D0B6367000A19C5 /* StopWatchTimeFormatterInstance.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -122,6 +130,13 @@
 		BC9390531CC01DA2000A951E /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = SOURCE_ROOT; };
 		BC9390551CC02E96000A951E /* CountFormattingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountFormattingProtocol.swift; sourceTree = "<group>"; };
 		BC95E7291D10949C00201329 /* StopWatchTimerFormatsErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatchTimerFormatsErrors.swift; sourceTree = "<group>"; };
+		BCB6B9421D5F6CF000A831B2 /* SavedTimeManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedTimeManagedObject.swift; sourceTree = "<group>"; };
+		BCB6B9441D5F721D00A831B2 /* SavedTimeKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedTimeKeys.swift; sourceTree = "<group>"; };
+		BCB6B9461D5F74D300A831B2 /* TimeFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeFormatter.swift; sourceTree = "<group>"; };
+		BCB6B9481D60CBA000A831B2 /* SavedTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedTime.swift; sourceTree = "<group>"; };
+		BCB6B94A1D60CC6000A831B2 /* SavedTimeCoreDataDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedTimeCoreDataDelegate.swift; sourceTree = "<group>"; };
+		BCCCD5E81D5F628400A4E6E8 /* SavedTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedTimeTableViewController.swift; sourceTree = "<group>"; };
+		BCCCD5EA1D5F62E500A4E6E8 /* SavedTimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedTimeTableViewCell.swift; sourceTree = "<group>"; };
 		BCE400F11D0B6337000A19C5 /* TimerCounterInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCounterInstance.swift; sourceTree = "<group>"; };
 		BCE400F31D0B6367000A19C5 /* StopWatchTimeFormatterInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatchTimeFormatterInstance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCCCD5F51D5F6B6400A4E6E8 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,11 +187,9 @@
 				BCCCD5E71D5F5CAF00A4E6E8 /* Controllers */,
 				BCCCD5E51D5F5AF700A4E6E8 /* Models */,
 				BC93902F1CBFCDDE000A951E /* Supporting Files */,
-				BCCCD5E31D5F5A6100A4E6E8 /* TimerCounter */,
-				BCCCD5E41D5F5AD200A4E6E8 /* TimeFormatter */,
-				BC9390351CBFCDDE000A951E /* Main.storyboard */,
 				BCCCD5E61D5F5C6500A4E6E8 /* CoreData */,
 				BC9390381CBFCDDE000A951E /* Images.xcassets */,
+				BC9390351CBFCDDE000A951E /* Main.storyboard */,
 				BC93903A1CBFCDDE000A951E /* LaunchScreen.xib */,
 			);
 			path = StopWatchTimer;
@@ -253,8 +267,14 @@
 		BCCCD5E51D5F5AF700A4E6E8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BCE400F11D0B6337000A19C5 /* TimerCounterInstance.swift */,
 				BCE400F31D0B6367000A19C5 /* StopWatchTimeFormatterInstance.swift */,
 				BC261EDE1D16FC22007662D8 /* CurrentFormattedDate.swift */,
+				BCB6B9461D5F74D300A831B2 /* TimeFormatter.swift */,
+				BCB6B9481D60CBA000A831B2 /* SavedTime.swift */,
+				BCB6B94A1D60CC6000A831B2 /* SavedTimeCoreDataDelegate.swift */,
+				BCCCD5E41D5F5AD200A4E6E8 /* TimeFormatter */,
+				BCCCD5E31D5F5A6100A4E6E8 /* TimerCounter */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -262,6 +282,8 @@
 		BCCCD5E61D5F5C6500A4E6E8 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				BCB6B9421D5F6CF000A831B2 /* SavedTimeManagedObject.swift */,
+				BCB6B9441D5F721D00A831B2 /* SavedTimeKeys.swift */,
 				BC0623751D33306200ADF897 /* SavedTimeCoreData.xcdatamodeld */,
 			);
 			name = CoreData;
@@ -272,7 +294,8 @@
 			children = (
 				BC9390331CBFCDDE000A951E /* MainViewController.swift */,
 				BC9291971D0A237C00832A4F /* SaveTimeViewController.swift */,
-				BCE400F11D0B6337000A19C5 /* TimerCounterInstance.swift */,
+				BCCCD5E81D5F628400A4E6E8 /* SavedTimeTableViewController.swift */,
+				BCCCD5EA1D5F62E500A4E6E8 /* SavedTimeTableViewCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -380,21 +403,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC9390341CBFCDDE000A951E /* MainViewController.swift in Sources */,
+				BCB6B9471D5F74D300A831B2 /* TimeFormatter.swift in Sources */,
 				BC76FA1C1CCD4A9800701C15 /* CountHourFormatter.swift in Sources */,
 				BC53D4071CD516D800F9C1C3 /* BaseCountFormatter.swift in Sources */,
 				BC76FA191CCD4A7000701C15 /* CountMinuteFormatter.swift in Sources */,
+				BCB6B9451D5F721D00A831B2 /* SavedTimeKeys.swift in Sources */,
 				BC9390321CBFCDDE000A951E /* AppDelegate.swift in Sources */,
 				BC81863D1CDE4EE700763382 /* TimeHoureMinuteSecondFormatter.swift in Sources */,
 				BC9390541CC01DA2000A951E /* Timer.swift in Sources */,
 				BC0CA12A1CCBB1F300C89EB9 /* Counter.swift in Sources */,
 				BC261EDF1D16FC22007662D8 /* CurrentFormattedDate.swift in Sources */,
 				BC8186391CDE4CC700763382 /* TimeMinuteSecondHundreathFormatter.swift in Sources */,
+				BCB6B9491D60CBA000A831B2 /* SavedTime.swift in Sources */,
+				BCCCD5E91D5F628400A4E6E8 /* SavedTimeTableViewController.swift in Sources */,
 				BC76FA161CCD4A1700701C15 /* CountSecondFormatter.swift in Sources */,
+				BCCCD5EB1D5F62E500A4E6E8 /* SavedTimeTableViewCell.swift in Sources */,
 				BC8186411CDE502600763382 /* BaseTimeFormatter.swift in Sources */,
 				BCE400F21D0B6337000A19C5 /* TimerCounterInstance.swift in Sources */,
 				BC76FA121CCD48AA00701C15 /* CountHundreathFormatter.swift in Sources */,
 				BC8186541CDE87B100763382 /* StopWatchTimerFormats.swift in Sources */,
 				BC0623771D33306200ADF897 /* SavedTimeCoreData.xcdatamodeld in Sources */,
+				BCB6B9431D5F6CF000A831B2 /* SavedTimeManagedObject.swift in Sources */,
+				BCB6B94B1D60CC6000A831B2 /* SavedTimeCoreDataDelegate.swift in Sources */,
 				BCE400F41D0B6367000A19C5 /* StopWatchTimeFormatterInstance.swift in Sources */,
 				BC8186371CDE4B1E00763382 /* TimeSecondHundreathFormatter.swift in Sources */,
 				BC76FA0D1CCD39E800701C15 /* TimerInterval.swift in Sources */,
@@ -557,10 +587,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = StopWatchTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tylerfrmn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -568,10 +601,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = StopWatchTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tylerfrmn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 			};
 			name = Release;
 		};
@@ -587,6 +622,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tylerfrmn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StopWatchTimer.app/StopWatchTimer";
 			};
 			name = Debug;
@@ -599,6 +635,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tylerfrmn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StopWatchTimer.app/StopWatchTimer";
 			};
 			name = Release;

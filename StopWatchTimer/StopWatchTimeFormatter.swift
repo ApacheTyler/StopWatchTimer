@@ -24,27 +24,23 @@ class StopWatchTimeFormatter {
     }
     
     func setFormatterToSH() -> Void {
-        self.trySetTimeFormatter(.SH_FORMAT)
+        self.setTimeFormatter(.SH_FORMAT)
     }
     
     func setFormatterToMSH() -> Void {
-        self.trySetTimeFormatter(.MSH_FORMAT)
+        self.setTimeFormatter(.MSH_FORMAT)
     }
     
     func setFormatterToHMS() -> Void {
-        self.trySetTimeFormatter(.HMS_FORMAT)
+        self.setTimeFormatter(.HMS_FORMAT)
     }
     
-    private func trySetTimeFormatter(format: StopWatchTimerFormats) -> Void {
-        do {
-            try self.formatter = self.getFormatterFromAvailableFormat(format)
-            self.currentFormat = format
-        } catch {
-            print("Failed to set time format")
-        }
+    private func setTimeFormatter(format: StopWatchTimerFormats) -> Void {
+        self.formatter = self.getFormatterFromAvailableFormat(format)
+        self.currentFormat = format
     }
     
-    func getFormatterFromAvailableFormat(format: StopWatchTimerFormats) throws -> TimeFormattingProtocol {
+    func getFormatterFromAvailableFormat(format: StopWatchTimerFormats) -> TimeFormattingProtocol {
         switch format {
         case .SH_FORMAT:
                 return TimeSecondHundreathFormatter()
@@ -52,8 +48,6 @@ class StopWatchTimeFormatter {
                 return TimeMinuteSecondHundreathFormatter()
         case .HMS_FORMAT:
                 return TimeHourMinuteSecondFormatter()
-        default: //I Realize this code will never be executed, but I'm playing with exception handeling
-                throw StopWatchTimerFormatsErrors.InvalidFormat
         }
     }
     

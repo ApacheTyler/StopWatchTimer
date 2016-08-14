@@ -9,10 +9,10 @@
 import Foundation
 
 
-public enum StopWatchTimerFormats {
+public enum StopWatchTimerFormats : String {
     
-    case SH_FORMAT
-    case MSH_FORMAT
-    case HMS_FORMAT
-        
+    case SH_FORMAT = "SH_FORMAT"
+    case MSH_FORMAT = "MSH_FORMAT"
+    case HMS_FORMAT = "HMS_FORMAT"
+    
 }

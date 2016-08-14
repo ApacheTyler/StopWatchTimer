@@ -157,7 +157,13 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="hXV-wX-dDa"/>
+                    <navigationItem key="navigationItem" id="hXV-wX-dDa">
+                        <barButtonItem key="rightBarButtonItem" title="View Saved" id="jdq-7g-uz5">
+                            <connections>
+                                <segue destination="28j-uh-p5G" kind="show" id="L3v-kb-Dsi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="FormatSegment" destination="jOK-Sq-XDT" id="FcE-so-8Tn"/>
                         <outlet property="StartStopSegment" destination="Qbd-fm-HAf" id="Nc7-Ix-6uW"/>
@@ -339,22 +345,69 @@
             </objects>
             <point key="canvasLocation" x="222" y="379"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Saved Time Table View Controller-->
         <scene sceneID="Yqg-zz-KVB">
             <objects>
-                <tableViewController id="28j-uh-p5G" sceneMemberID="viewController">
+                <tableViewController id="28j-uh-p5G" customClass="SavedTimeTableViewController" customModule="StopWatchTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="aNA-PZ-z1T">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hBA-dr-hcA">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SavedTimeCell" id="hBA-dr-hcA" customClass="SavedTimeTableViewCell" customModule="StopWatchTimer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hBA-dr-hcA" id="r0x-I3-kp6">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NK3-gG-z4U">
+                                            <rect key="frame" x="8" y="-4" width="259" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="259" id="o9i-tD-Ppp"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DateSaved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2D5-5i-PGK">
+                                            <rect key="frame" x="8" y="22" width="259" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Formatted Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40L-07-J85">
+                                            <rect key="frame" x="142" y="8" width="450" height="28"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="450" id="WD1-J0-1JV"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="WD1-J0-1JV"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="40L-07-J85" firstAttribute="leading" secondItem="2D5-5i-PGK" secondAttribute="trailing" constant="-125" id="3dU-YR-NpQ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="40L-07-J85" secondAttribute="trailing" id="DO6-Ji-Hh5"/>
+                                        <constraint firstItem="40L-07-J85" firstAttribute="leading" secondItem="NK3-gG-z4U" secondAttribute="trailing" constant="-125" id="EDI-tp-FQr"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="NK3-gG-z4U" secondAttribute="leading" id="KJG-Oa-HBg"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="2D5-5i-PGK" secondAttribute="leading" id="L82-IR-BJT"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="40L-07-J85" secondAttribute="bottom" id="TKW-d6-lSN"/>
+                                        <constraint firstItem="2D5-5i-PGK" firstAttribute="top" secondItem="NK3-gG-z4U" secondAttribute="bottom" constant="5" id="bN7-QU-tfB"/>
+                                        <constraint firstItem="40L-07-J85" firstAttribute="centerY" secondItem="r0x-I3-kp6" secondAttribute="centerY" id="c2E-QO-OtO"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="NK3-gG-z4U" secondAttribute="bottom" constant="18" id="uEM-kB-Eof"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="SavedTimeDateSavedLabel" destination="2D5-5i-PGK" id="kEr-DY-w0E"/>
+                                    <outlet property="SavedTimeFormattedTimeLabel" destination="40L-07-J85" id="4i2-Ke-V4k"/>
+                                    <outlet property="SavedTimeTitleLabel" destination="NK3-gG-z4U" id="zRQ-bX-Eqp"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -365,7 +418,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJ9-2r-P92" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="222" y="1062"/>
+            <point key="canvasLocation" x="1034" y="1086"/>
         </scene>
     </scenes>
 </document>
